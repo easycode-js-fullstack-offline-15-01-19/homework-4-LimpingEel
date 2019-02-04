@@ -64,15 +64,31 @@
 // 	return arr2
 // }
 
-// #7        !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+// #7  
 
-function sumArr() {
-	let result = [];
-	return result
-}
+// function changeCollection() {
+//   var handler = arguments[arguments.length - 1];
+    
+//   for (var i = 0; i < arguments.length - 1; i++) {
+//     var array = arguments[i];
+      
+//     handler(array);
+//   }
+// }
+
+// function deleteFunc(array) {
+//   array.shift();
+// }
+
+// var one = [1,2,3];
+// var two = ['a','b','c'];
+
+// changeCollection(one, two, deleteFunc)
+
+// console.log(one, two);
 
 // #8
-function a(users, 'gender', 'male')
+// function a(users, 'gender', 'male')
 
 
 
@@ -81,7 +97,7 @@ function a(users, 'gender', 'male')
 
 // #1
 
-function firstFunc(arr, handler1) {
-	let str = 'New value:' + firstFunc()
-}
+// function firstFunc(arr, handler1) {
+// 	let str = 'New value:' + firstFunc()
+// }
 
