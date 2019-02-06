@@ -66,38 +66,44 @@
 
 // #7  
 
-// function changeCollection() {
-//   var handler = arguments[arguments.length - 1];
-    
-//   for (var i = 0; i < arguments.length - 1; i++) {
-//     var array = arguments[i];
-      
-//     handler(array);
-//   }
+// function arr() {
+// 	let newArr = [];
+// 	for (let i = 0; i < arguments.length; i++) {
+// 		arguments[i].shift()
+// 		newArr.push(arguments[i])
+// 	}
+// 	return newArr
 // }
-
-// function deleteFunc(array) {
-//   array.shift();
-// }
-
-// var one = [1,2,3];
-// var two = ['a','b','c'];
-
-// changeCollection(one, two, deleteFunc)
-
-// console.log(one, two);
 
 // #8
-// function a(users, 'gender', 'male')
 
+// let arr = [
+// 	{
+// 		name: 'Denis',
+// 		age: '29',
+// 		gender: 'male'
+// 	},
+// 	{
+// 		name: 'Ivan',
+// 		age: '20',
+// 		gender: 'male'
+// 	}
+// ]
 
-
+// const check = arr.filter(function (user) {
+// 	if (typeof user.name === 'string' && typeof user.age === 'string' && typeof user.gender === 'string') return user
+// });
 
 // Функции высшего порядка. Задачи.
 
 // #1
 
 // function firstFunc(arr, handler1) {
-// 	let str = 'New value:' + firstFunc()
+// 	let str = 'New value: ' + arr
+
+// 	return str
 // }
 
+// function handler1() {
+	
+// }
