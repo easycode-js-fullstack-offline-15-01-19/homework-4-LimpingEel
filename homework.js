@@ -5,11 +5,17 @@
 // #1
 
 // function multiply() {
-// 	let result = 1;
-// 	for (let i = 0; i < arguments.length; i++) {
-// 		result *= arguments[i]
-// 	}
-// 	return result;
+//      if (!arguments.length) { return 0; }
+
+// 	    let result = 1;
+
+
+// 	    for (let i = 0; i < arguments.length; i++) {
+// 		   result *= arguments[i]
+// 	    }
+
+
+// 	    return result;
 // }
 
 // #2
@@ -36,7 +42,7 @@
 // #4                
 
 // function yourNumber(number) {
-// 	if (number < 0 || number > 10) { return console.log('Error'); }
+// 	if (number < 1 || number > 10) { return console.log('Error'); }
 // 	let random = Math.round(Math.random() * 10);
 // 	if (number === random) {
 // 		console.log('Вы выиграли')
@@ -60,8 +66,7 @@
 // let arr = [1,2,3];
 
 // function doubleArray(arr) {
-// 	arr2 = arr.concat(arr)
-// 	return arr2
+// return arr.concat(arr)
 // }
 
 // #7  
@@ -77,7 +82,7 @@
 
 // #8
 
-// let arr = [
+// let users = [
 // 	{
 // 		name: 'Denis',
 // 		age: '29',
@@ -94,16 +99,55 @@
 // 	if (typeof user.name === 'string' && typeof user.age === 'string' && typeof user.gender === 'string') return user
 // });
 
+
+// function getUsers(users, key, value) {
+
+//     let newUsers = [];
+
+//     for (let i = 0; i < users.length; i++) {
+//         if (users[i][key == value]) {
+//             newUsers.push(users[i])
+//         }
+//     }
+
+
+//     return newUsers;
+// }
+
 // Функции высшего порядка. Задачи.
 
 // #1
 
-// function firstFunc(arr, handler1) {
-// 	let str = 'New value: ' + arr
+// function processString(arr, handler) {
+//     if (!Array.isArray(arr)) return console.log('error');
 
-// 	return str
+
+//     let newString = 'New value: ';
+
+//     for (let i = 0; i < arr.length; i++) {
+//          newString += handler(arr[i]);
+//     }
+    
+
+//     return newString;
 // }
 
-// function handler1() {
-	
-// }
+// let mainRes1 = processString(['my', 'name', 'is', 'Trinity'], function (item) {
+//     return item[0].toUpperCase() + item.slice(1)
+// });
+
+
+// #2
+// let mainRes2 = processString([10, 20, 30], function (item) {
+//     return item * 10 + ' ';
+// });
+
+// #3
+// let mainRes3 = processString([{age: 45, name: 'Jhon'}, {age: 20, name: 'Aaron'}], function (item) {
+//     return `${item.name} is ${item.age}` + ', ';
+// });
+
+// #4
+// let mainRes4 = processString(['abc', '123'], function (item) {
+//     return item.split('').reverse().join('') + ', ';
+// });
